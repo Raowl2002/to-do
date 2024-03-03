@@ -1,3 +1,5 @@
+import { AiOutlineDelete } from "react-icons/ai";
+
 function CreatedTask({ addTask, date, id, onDelete }) {
   return (
     <>
@@ -10,7 +12,7 @@ function CreatedTask({ addTask, date, id, onDelete }) {
             id={id}
             onClick={(e) => onDelete(e.target.id)}
           >
-            Delete
+            <AiOutlineDelete />
           </button>
         </div>
       </div>
